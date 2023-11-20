@@ -77,7 +77,7 @@ def diagonalDifference(arr):
     diag2 = 0
     for i in range(len(arr)):
         row = arr[i]
-        diag1 += row[i]
+        diag1 += row[i] #going from left to right
         diag2 += row[len(row) - i - 1] #go from the other side of the row (hence -1 for indexing)
     return abs(diag1 - diag2)
 
