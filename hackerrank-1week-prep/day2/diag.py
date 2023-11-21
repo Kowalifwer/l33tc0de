@@ -59,6 +59,7 @@
 
 #!/bin/python3
 
+# imports
 import math
 import os
 import random
