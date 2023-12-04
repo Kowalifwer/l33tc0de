@@ -5,9 +5,9 @@ def surround_with_prints(func: callable):
             print("WE GOT A CRAZY SETUP HERE") #this functionality comes from the wrapper, but depends on the wrapped params.
 
         print("Print before")
-        print(args, kwargs)
-        func(*args, **kwargs)
+        val = func(*args, **kwargs)
         print("Print after")
+        return val
     
     return wrapper
 
@@ -17,15 +17,13 @@ def f1(a):
     print(f"This is {a} function")
 
 def f2(a,b, **kwargs):
-
-    print(f"This is {a} {b} function")
+    return f"This is {a} {b} function"
 
 f1("CRAZY")
 
 #manual/OG wrapping
 f2_wrapped = surround_with_prints(f2) #initialize the wrapper, and pass the function to wrap inside of it
-f2_wrapped("one", "two", extra="please") #previously we defined the new function, with the wrapped functionality, that supports the original functions args. Now we can call it
-
-
+xd = f2_wrapped("one", "two", extra="please") #previously we defined the new function, with the wrapped functionality, that supports the original functions args. Now we can call it
+print(xd)
 
 
