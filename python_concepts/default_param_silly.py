@@ -1,16 +1,19 @@
 # this will not work as expected - default value is evaluated on function definition, not on function call.
 # so any changes to the default value will be reflected in all the function calls, and the default value will not be reset. on each call.
-def test(x = [1,2,3,4]):
-    x[2] = "K"
+# def test(x = [1,2,3,4]):
+#     print(x)
+#     x[2] = "K"
 
 # python suggests to use None as default value, and then check for None in the function body.
 def test(x = None):
     if x is None:
         x = [1,2,3,4]
+        
+    print(x)
     x[2] = "K"
 
-# test()
-# test()
+test()
+test()
 
 
 
