@@ -36,7 +36,8 @@ def map(fn: callable, iterable: Iterable) -> Generator:
 
         yield fn(next_item)
 
-print(list(zip([1,2,3],[1,2,3])))
+xd = iter([1,2,3,4])
+print(list(zip(xd, xd)))
 
 for tup in enumerate([1,2,3]):
     print(tup)
