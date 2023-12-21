@@ -9,3 +9,4 @@
 * [ ] [206. Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/) [understood the iterative, not the recursive]
 * [ ] [21. Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/) [Dummy node concept helps]
 * [ ] 143 [Reorder List](https://leetcode.com/problems/reorder-list/submissions/1125409026/) - slow,fast to find middle -> make copy for RHS, and cut original link -> reverse all after middle. Then iterate down both lists.
+* [ ] 19 [Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/) -> dummy node + fast/slow. fast must advance n forward, then both fast and slow go until fast reaches end. slow is therefore one before the deletion marker.
