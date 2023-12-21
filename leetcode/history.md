@@ -8,3 +8,4 @@
 * [ ] [153. Find Minimum in Rotated Sort](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/) [TRICKY - check if half of array is sorted in order to find pivot, arr is guaranteed to be in at most two sorted subarrays ]
 * [ ] [206. Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/) [understood the iterative, not the recursive]
 * [ ] [21. Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/) [Dummy node concept helps]
+* [ ] 143 [Reorder List](https://leetcode.com/problems/reorder-list/submissions/1125409026/) - slow,fast to find middle -> make copy for RHS, and cut original link -> reverse all after middle. Then iterate down both lists.
