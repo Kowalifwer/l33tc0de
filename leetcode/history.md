@@ -18,5 +18,10 @@
 * [ ] [104. Maximum Depth of Binary Tre](https://leetcode.com/problems/maximum-depth-of-binary-tree/) - 3 ways, recursive (1 + max(left, right)), BFS w queue, iterativeDFS
 * [ ] [543. Diameter of Binary Tree](https://leetcode.com/problems/diameter-of-binary-tree/) - similar  to height, get max of each subtree but -1 on base case. max(2 + left + right) for diameter stuff
 * [ ] [110. Balanced Binary Tree](https://leetcode.com/problems/balanced-binary-tree/) - max height at l,r and make sure l > r not by 1
-* [ ] [100. Same Tree](https://leetcode.com/problems/same-tree/) - done with generator - prolly better elsehow.
-* [ ] [572. Subtree of Another Tree](https://leetcode.com/problems/subtree-of-another-tree/) -
+* [ ] [100. Same Tree](https://leetcode.com/problems/same-tree/) - done with generator - prolly better elsehow. check next for is_same proper
+* [ ] [572. Subtree of Another Tree](https://leetcode.com/problems/subtree-of-another-tree/) - use is_same (recurse to every node, false if different) -> then use on all nodes
+* [ ] [102. Binary Tree Level Order Trave](https://leetcode.com/problems/binary-tree-level-order-traversal/) - basic DFS tree traversal - then print or return all from current queue level
+* [ ] [46. Permutations](https://leetcode.com/problems/permutations/) - DFS backtrack memes, I looped over all and ignore existing with i== check
+* [ ] [78. Subsets](https://leetcode.com/problems/subsets/) - DFS backtrack, 2 paths - 1 adds next item, 1 does not add - eventually branch to all options
+* [ ] [39. Combination Sum](https://leetcode.com/problems/combination-sum/) - check all possitibilites, and return em
+* [ ] [36. Valid Sudoku](https://leetcode.com/problems/valid-sudoku/) - go over all rows, all colls, all 9 subsquares and make sure conditions hold
