@@ -25,3 +25,24 @@
 * [ ] [78. Subsets](https://leetcode.com/problems/subsets/) - DFS backtrack, 2 paths - 1 adds next item, 1 does not add - eventually branch to all options
 * [ ] [39. Combination Sum](https://leetcode.com/problems/combination-sum/) - check all possitibilites, and return em
 * [ ] [36. Valid Sudoku](https://leetcode.com/problems/valid-sudoku/) - go over all rows, all colls, all 9 subsquares and make sure conditions hold
+
+# 23.12.2023 Saturday
+
+* [ ] [235. Lowest Common Ancestor of](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/) - only move down next root (left or right) IF left is < root and right is > root. IF IT SPLITS - means we are at the LCA.
+* [ ] [199. Binary Tree Right Side View](https://leetcode.com/problems/binary-tree-right-side-view/) - BFS and return rightmost item
+* [ ] [1448. Count Good Nodes in Binary](https://leetcode.com/problems/count-good-nodes-in-binary-tree/) - update thereshold/allowedMin after each node, to max of current val and existing limit. make this local to each search (left and right) -
+* [ ] [98. Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/) - FIRST, make sure next child nodes are correct (easy part) -> NEXT, make sure ANY following node, follows the boundaries between min < node.val < max. Update these as you go, depending which side we branch into.
+* [ ] [230. Kth Smallest Element in a BST](https://leetcode.com/problems/kth-smallest-element-in-a-bst/) - do the left print right search, k-- until k=0, then return the minimum.
+* [ ] [701. Insert into a Binary Search Tre](https://leetcode.com/problems/insert-into-a-binary-search-tree/) - iteratively easy, just check each time whether to go left or right, if none - insert.
+* [ ] [90. Subsets II](https://leetcode.com/problems/subsets-ii/) - not complete.
+
+# 24.12.2023 Sunday
+
+* [ ] [79. Word Search](https://leetcode.com/problems/word-search/) - juicy backtrack, not bad, more about 2d array manipulation with visited state management.
+* [ ] [1046. Last Stone Weight](https://leetcode.com/problems/last-stone-weight/) - min heap HEAPQ stuff
+* [ ] [22. Generate Parentheses](https://leetcode.com/problems/generate-parentheses/) - backtracking silinness - manage state of n_open and n_closed brackers
+* [ ] [973. K Closest Points to Origin](https://leetcode.com/problems/k-closest-points-to-origin/) - chill heapq. uses python comparison property to our advantage here!
+* [ ] [441. Arranging Coins](https://leetcode.com/problems/arranging-coins/) - filler, to relax
+* [ ] [705. Design HashSet](https://leetcode.com/problems/design-hashset/) - filler to relax, but use chain pointers with dummy node
+* [ ] [1721. Swapping Nodes in a Linked](https://leetcode.com/problems/swapping-nodes-in-a-linked-list/) - move left pointer to k. set exhaust pointer to left. move right until exhaust pointer reaches the end. that way you get k and -k -> swap values.
+* [ ]
