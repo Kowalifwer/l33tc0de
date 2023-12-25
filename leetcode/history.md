@@ -45,4 +45,21 @@
 * [ ] [441. Arranging Coins](https://leetcode.com/problems/arranging-coins/) - filler, to relax
 * [ ] [705. Design HashSet](https://leetcode.com/problems/design-hashset/) - filler to relax, but use chain pointers with dummy node
 * [ ] [1721. Swapping Nodes in a Linked](https://leetcode.com/problems/swapping-nodes-in-a-linked-list/) - move left pointer to k. set exhaust pointer to left. move right until exhaust pointer reaches the end. that way you get k and -k -> swap values.
-* [ ]
+
+# 25.12.2023 Monday
+
+Did  a bunch of theory reading, out of interest and in preparation for System deesign.
+
+### CAP understood
+
+* A and C tradeoffs only exist because of latency of data transfer in a cluster/network. IF there was no latency - both A and C could be implemented
+* P handling means IF PARTITION OCCURS, i.e a network is split due to node failure for example - then the system must be able to continue provide services.
+* P is tightly coupled to C - i.e IF we have very bad P - we will also have very bad A (i.e node dies and no requests are serverd at all - 0 availability)
+
+  * Alternatively, if A is very bad - that does not mean P is bad -> P can be very good with horrible A, if lets say replication is very slow and blocks all read /write requests
+* PC setups involve NoSQL like MongoDB or distributed SQL options exist too.
+* Very common in highly distribute tho is PA - high availability and eventual consistency. This makes sense in distributed env - since full consistency across all replicas can take a long time
+
+### Revisited parallel programming ideas
+
+Locks, Atomic variables/operations, Semaphores, Condition object (python) etc.. Understanding deadlock and practied managing threads. Previously ASYNC/ concurrency has clicked, and now I saw many similarities between multithreaded python especially (due to GIL, it seems to work very similar as asyncio - multiple threads run on one, but context switch to simulate paralellism)
