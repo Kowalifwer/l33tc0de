@@ -63,3 +63,18 @@ Did  a bunch of theory reading, out of interest and in preparation for System de
 ### Revisited parallel programming ideas
 
 Locks, Atomic variables/operations, Semaphores, Condition object (python) etc.. Understanding deadlock and practied managing threads. Previously ASYNC/ concurrency has clicked, and now I saw many similarities between multithreaded python especially (due to GIL, it seems to work very similar as asyncio - multiple threads run on one, but context switch to simulate paralellism)
+
+
+# 26.1.2023 Tuesday
+
+- More leetcode, but brain is fried
+- Tries seem easy, keep them!!
+
+### Todo
+
+- Revisit Monotonic Decreasing Stack in Daily Temperatures
+- DO deep dive into GRAPHS
+- DO early/small dive into Dynamic Prog (easy qns and stuff, visualize and start forming some intuition)
+- Dedicate a day to visualize SEARCHING THE SPACE - this is something that is applied almost anywhere, with backtracking also same concept, but harder to imagine the nodes to traverse (more abstract)
+- Greedy etc.. filler
+- Recap old solved stuff - arrays, strings, linkedlist, trees.
