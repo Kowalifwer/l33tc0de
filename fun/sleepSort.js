@@ -10,7 +10,7 @@ const doAfter = (callable, time) => {
 //in place kinda cap cuz u gotta store smelly coroutines/promises,
 //i think in a language where you can just launch thread n then collect without storing somehow,
 //this could be in place (idk tho lol)
-// warning dont put elements too big 
+// warning dont put elements too big
 async function sleepSortInPlace(list) {
     let pos = 0
     let promises = []
